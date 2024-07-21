@@ -2,7 +2,10 @@
 permalink: /
 title: "Neural Mechatronics and Mixed Reality for Patient Care"
 excerpt: "Matthew T. Flavin is a postdoctoral researcher developing bioelectronics and neuroengineering technologies"
-author_profile: true
+author_profile: false
+header:
+  - overlay_image: IMG_3799_smaller.jpg
+  - overlay_color: #FDFBFD
 redirect_from: 
   - /about/
   - /about.html

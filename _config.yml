@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Matthew Flavin"
+title                    : "Flavin NeuroMechatronics Lab"
 title_separator          : "-"
 name                     : &name "Matthew Flavin"
-description              : &description "Postdoctoral researcher in bioelectronics and neuroengineering"
-url                      : https://flavinresearch.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Research lab at Georgia Tech. Neural mechatronics and mixed reality for patient care."
+url                      : https://flavinlab.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "mflav/mflav.github.io"
+repository               : "Flavin-NeuroMechatronics-Lab/Flavin-NeuroMechatronics-Lab.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "MattTFlavin"
+  username               : "ProfMattFlavin"
 facebook:
   username               :
   app_id                 :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "MattTFlavin"
+  twitter          : "ProfMattFlavin"
   vine             :
   weibo            :
   xing             :
