@@ -5,7 +5,7 @@ excerpt: "Matthew T. Flavin is a postdoctoral researcher developing bioelectroni
 author_profile: false
 header:
   - overlay_image: IMG_3799_smaller.jpg
-  - overlay_color: #FDFBFD
+  - overlay_color: \#FDFBFD
 redirect_from: 
   - /about/
   - /about.html
