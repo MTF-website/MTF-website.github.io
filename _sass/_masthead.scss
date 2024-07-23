@@ -4,19 +4,33 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
+  background-color: #29292a;
+  width: 100%;
+  border: 0;
+  height: 100px;
+  //border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
 
-  &__inner-wrap {
-    @include container;
-    @include clearfix;
-    padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+  //&--home {
+  //    position: fixed;
+  //}
 
+  &__inner-wrap {
+    //@include container;
+    max-width: 1000px;
+    @include clearfix;
+    padding: 0;
+    //padding: 1em 1em 1em;
+    //font-family: $sans-serif-global;
+    font-family: $global-font-family;
+    transform: translate(0,-50%);
+    top: 50%;
+
+    position: relative;
     @include breakpoint($x-large) {
       max-width: $x-large;
     }

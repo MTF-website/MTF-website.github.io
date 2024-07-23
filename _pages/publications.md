@@ -2,14 +2,14 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
 {% if author.googlescholar %}
-  You can also find my articles on <a href="{{author.googlescholar}}">Google Scholar</a>.
+  See also: <a href="{{author.googlescholar}}">Google Scholar</a>.
 {% endif %}
 
 {% include base_path %}

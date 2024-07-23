@@ -1,19 +1,31 @@
 {% include base_path %}
 
-<div class="masthead">
+
+{% if site.logo contains "://" %}
+  {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% else %}
+  {% capture logo_path %}{{ site.logo | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+{% endif %}
+
+
+<div class="masthead" {% if page.layout == "home" %}style="position: fixed;"{% elsif page.layout == "contact"%}style="position: absolute;"{% endif %}>
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
+            {% if site.logo %}  
+            <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"><img  src="{{ logo_path }}" class=logo></a></li>
+          {% else %}
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          {% endif %}
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title | upcase }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

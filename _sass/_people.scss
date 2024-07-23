@@ -1,0 +1,102 @@
+
+.card-container {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-flow: wrap;
+        //padding-bottom: 40px;
+        gap: 20px;
+
+    .author__avatar2 {
+        text-align: left;
+        flex: 0 1 250px;
+        //width: fit-content;
+      //display: table-cell;
+      //vertical-align: top;
+      //width: 36px;
+      // set width only, for non-square avatars
+      // height: 36px;
+
+
+    }
+}
+
+.author__bio2 {
+    font-weight: 400;
+    font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+  @include breakpoint(max-width $medium) {
+    font-size: 14px;
+            line-height: 21px;
+
+  }
+}
+.bylines {
+        text-align: left;
+        flex: 0 1 max-content;
+        width: fit-content;
+        h4 {
+            margin: 5px 0;
+            font-weight: 300;
+            line-height: 24px;
+            font-size: 16px;
+              @include breakpoint(max-width $medium) {
+                font-size: 12px;
+
+  }
+        }
+}
+
+.author-card-socials{
+    display: flex;
+    justify-content: space-evenly;
+                flex-direction: row;
+                flex-wrap: wrap;
+    .button {
+        //a {
+            border-style: solid;
+            margin: 20px;
+            flex: 0 0 100px;
+            border-width: 1px 1px 1px 1px;
+            background-color: #ffffff;
+            border-color: #0c0c0c;
+            width: 100px;
+            height: 40px;
+            line-height: 1;
+            display: inline-block;
+            text-align: center;
+            border-radius: 3px;
+            &--inner {
+
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+            img {
+                height: 14px;
+            }
+            a {
+                color: rgb(12, 12, 12);
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 14px;
+            }
+              @include breakpoint(max-width $medium) {
+                width: 80px;
+                flex: 0 0 80px;
+                  a {
+                font-size: 9px;
+            }
+            img {
+                height: 9px;
+            }
+
+  }
+        //}
+    }
+}
+

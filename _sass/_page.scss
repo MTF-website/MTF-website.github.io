@@ -2,6 +2,13 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
+.hero_p1 {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+
 #main {
   @include container;
   @include clearfix;
@@ -14,6 +21,14 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
+}
+
+.main--home {
+    text-align: center;
+    color: #fff;
+    transform: translate(0,-50%);
+    position: relative;
+    top: calc(50% - 12vw + 50px)
 }
 
 .page {
@@ -115,13 +130,13 @@
   animation-delay: 0.25s;
 
   &--overlay {
-    position: relative;
-    margin-bottom: 2em;
-    padding: 3em 0;
+    flex: 2;
+    margin-bottom: 0;
+    padding: 0;
     @include clearfix;
-    background-size: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     animation: intro 0.3s both;
     animation-delay: 0.25s;
 
@@ -130,8 +145,12 @@
     }
 
     .wrapper {
-      padding-left: 1em;
-      padding-right: 1em;
+        transform: translate(0,-50%);
+        //top: calc(50% - 100vw * 0.192 );
+        top: calc(50% - 10vw + 50px);;
+        position: relative;
+//      padding-left: 1em;
+//      padding-right: 1em;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -142,16 +161,22 @@
     .page__meta,
     .page__lead,
     .btn {
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+        text-align: center;
+        //color: #fff;
+//      text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
     .page__lead {
-      max-width: $medium;
+      //max-width: $medium;
+      transform: translate(-50%,0);
+        left: 50%;
+        position: relative;
+        max-width: 550px;
     }
 
     .page__title {
       font-size: $type-size-2;
+      font-weight: 500;
 
       @include breakpoint($small) {
         font-size: $type-size-1;
@@ -398,4 +423,86 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+.logo {
+    height: 70px;
+    max-width: unset;
+}
+
+.hero_p2 {
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+}
+
+
+.array {
+    flex: 2;
+    background-size: 100% auto;
+    width: 100%;
+        background-position: center bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*
+.hero-wrapper {
+    transform: translate(-50%,-50%); 
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    color: #fff;
+            //border-style: solid;
+            margin: 20px;
+            //border-width: 1px 1px 1px 1px;
+            background-color: #000;
+            //border-color: #0c0c0c;
+            width: 300px;
+            height: 50px;
+            line-height: 1;
+            display: inline-block;
+            text-align: center;
+            border-radius: 3px;
+            background: rgba(70, 70, 70, 0.6);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            //background-image: radial-gradient(black 33%, transparent 33%);
+
+                h1 {
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                }
+}
+*/
+
+.contact-wrapper {
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
+    box-shadow:  0 -10px 20px 10px rgba(0,0,0,0.6);
+}
+
+.bio-contact {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-flow: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        //padding-bottom: 40px;
+        gap: 20px;
+}
+.bio-contact-item {
+        text-align: left;
+        flex: 0 1 250px;
+        h2 {
+            margin-top: 0;
+        }
 }

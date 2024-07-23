@@ -1,23 +1,36 @@
 {% include base_path %}
 
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-  </ul>
-</div>
+{% if page.layout == "home" %}
+    {% capture logo_path %}{{ "/images/logo_full_lightbg.png" }}{% endcapture %}
+    {% capture twitter_path %}{{ "/images/twitter_lightbg.svg" }}{% endcapture %}
+    {% capture linkedin_path %}{{ "/images/linkedin_lightbg.png" }}{% endcapture %}
+{% else %}
+    {% capture logo_path %}{{ "/images/logo_full_darkbg.png" }}{% endcapture %}
+    {% capture twitter_path %}{{ "/images/twitter_darkbg.svg" }}{% endcapture %}
+    {% capture linkedin_path %}{{ "/images/linkedin_darkbg.png" }}{% endcapture %}
+{% endif %}
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</div>
+<footer {% if page.layout == "home" %}style="background-color: rgb(253,251,253);"{% endif %} >
+<div>
+<div class="lhs">
+    <a href="{{ base_path }}/"><img  src="{{ logo_path | prepend: base_path }}"></a>
+    <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</div>
+</div>
+<div class="rhs">
+      <div class="social-icons">
+        {% if site.twitter.username %}
+          <a href="https://x.com/{{ site.twitter.username }}">
+                  <img style="" src="{{ twitter_path | prepend: base_path }}">
+            </a>
+        {% endif %}
+        {% if site.twitter.username %}
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}">
+                  <img src="{{ linkedin_path | prepend: base_path }}">
+            </a>
+        {% endif %}
+    </div>
+    <a class="page__footer-sitemap"  href="/sitemap/">Sitemap</a>
+</div>
+</div> 
+
+</footer>

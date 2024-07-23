@@ -1,0 +1,13 @@
+{% include base_path %}
+
+<h2>{{ post.title }}</h2>
+<div class="bio-container">
+	<div class="bio-item1">
+    <img src="{{ post.image | prepend: "/images/" | prepend: base_path }}"  alt="Distributed haptics">
+    </div>
+  <div class="bio-item2">
+		
+      {{ post.content }}
+	</div>
+
+</div>

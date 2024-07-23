@@ -1,0 +1,76 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+      {% include page__hero.html %}
+    {% endif %}
+
+    {% if page.url != "/" and site.breadcrumbs %}
+      {% unless paginator %}
+        {% include breadcrumbs.html %}
+      {% endunless %}
+    {% endif %}
+    <div class="contact-wrapper" > 
+        <div id="main" role="main" style="margin-top: 0;max-width: 1000px;">
+
+
+        <div class="page__inner-wrap">
+              {% if page.title %}<h1 style="padding-top: 50px;" class="page__title" itemprop="headline">{{ page.title | upcase | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+        
+
+          <section class="page__content" itemprop="text">
+            {{ content }}
+            <div class="bio-contact">
+            <div class="bio-contact-item">
+            <h2>Our location</h2>
+            <h3>Prof. Flavin's office address:</h3>
+            <p>
+            777 Atlantic Dr NW<br>
+            Van Leer Building, Room 325A<br>
+            Atlanta, GA 30313<br>
+            </p>
+            <h3>Lab and shipping address:</h3>
+            <p>
+            777 Atlantic Dr NW<br>
+            Van Leer Building, Room W437<br>
+            Atlanta, GA 30313<br>
+            </p>
+        </div>
+            <div class="bio-contact-item" style="flex: 0 1 650px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d586.2639930596874!2d-84.397531180048!3d33.77591713037547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5048a1b919b1f%3A0x4ebd83ca60615a8b!2sVan%20Leer%20Building!5e0!3m2!1sen!2sus!4v1721714033926!5m2!1sen!2sus" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+          </section>
+
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <div class="page__footer">
+        {% include footer/custom.html %}
+        {% include footer.html %}
+    {% include scripts.html %}
+    </div>
+
+  </body>
+</html>
+
