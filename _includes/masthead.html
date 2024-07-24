@@ -12,10 +12,9 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
         <ul class="visible-links">
             {% if site.logo %}  
-            <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"><img  src="{{ logo_path }}" class=logo></a></li>
+            <li><a href="{{ base_path }}/"><img  src="{{ logo_path }}" class=logo></a></li>
           {% else %}
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% endif %}
@@ -27,9 +26,20 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title | upcase }}</a></li>
           {% endfor %}
+          <li><button class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><i class="fas fa-fw fa-x selector-x hidden" aria-hidden="true"></i><i class="fas fa-fw fa-bars selector-y" aria-hidden="true"></i>MENU</button></li>
         </ul>
-        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
+        <ul class="hidden-links2 hidden">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+              {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <li class="masthead__menu-item2"><a href="{{ domain }}{{ link.url }}">{{ link.title | upcase }}</a></li>
+          {% endfor %}
+
+        </ul>
 </div>

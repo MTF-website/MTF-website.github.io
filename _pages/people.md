@@ -6,14 +6,4 @@ author_profile: false
 layout: people
 ---
 
-{% include base_path %}
-## Principal investigator
-
-{% include pi_card.html %}
-
-## Graduate students
-
-{% for post in site.grad_students %}
-  {% include people_card.html %}
-{% endfor %}
 

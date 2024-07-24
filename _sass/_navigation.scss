@@ -180,7 +180,7 @@
   a {
     display: block;
     margin: 0 1rem;
-    padding: 0.5rem 0;
+ //   padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
 
@@ -188,7 +188,7 @@
       color: $masthead-link-color-hover;
     }
   }
-
+/*
   button {
     position: absolute;
     height: 100%;
@@ -200,6 +200,7 @@
     color: #fff;
     cursor: pointer;
   }
+  */
 
   .visible-links {
     display: table;
@@ -228,7 +229,7 @@
 
     a {
       position: relative;
-
+/*
       &:before {
         content: "";
         position: absolute;
@@ -241,14 +242,14 @@
         transition: $global-transition;
         -webkit-transform: scaleX(0);
             -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
+                transform: scaleX(0); 
       }
 
       &:hover:before {
         -webkit-transform: scaleX(1);
             -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
-      }
+                transform: scaleX(1); 
+      }*/
     }
   }
 
@@ -433,3 +434,66 @@
     }
   }
 }
+
+.masthead__menu-item2 {
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+    a{
+    text-decoration: none;
+    color: #fff;
+}
+  &--lg {
+    padding-right: 2em;
+    font-weight: 700;
+  }
+}
+
+.menu-toggle {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 0.5em 1.0em;
+    line-height: 1.5;
+    background: transparent;
+    color: #fff;
+    margin-left: 20px;
+
+}
+
+.hidden-links2 {
+    //list-style-type: none;
+
+      text-align: center;
+      padding: 0;
+      background: #000;
+      margin-top: 0;
+
+}
+@include breakpoint(max-width $medium) {
+    .masthead__menu-item {
+        display: none !important;
+        visibility: hide !important;
+    }
+    .masthead__inner-wrap {
+        height: 60px;
+    }
+    .logo {
+        height: 45px !important;
+    }
+}
+
+@include breakpoint($medium) {
+    .menu-toggle {
+        display: none;
+        visibility: hide;
+    }
+    .hidden-links2 {
+        display: none;
+        visibility: hide;
+    }
+}
+
+
+

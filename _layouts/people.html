@@ -20,9 +20,13 @@ layout: default
         </header>
       {% endunless %}
 
-
-        
-
-    {{ content }}
+    <h2>Principal investigator</h2>
+        {% include pi_card.html %}
+    <h2>Graduate students</h2>
+    <div class="team__container__container">
+    {% for post in site.grad_students %}
+      {% include people_card.html %}
+    {% endfor %}
+  </div>
   </div>
 </div>

@@ -1,13 +1,18 @@
 {% include base_path %}
 
-<h2>{{ post.title }}</h2>
-<div class="bio-container">
-	<div class="bio-item1">
-    <img src="{{ post.image | prepend: "/images/" | prepend: base_path }}"  alt="Distributed haptics">
-    </div>
-  <div class="bio-item2">
-		
-      {{ post.content }}
-	</div>
 
+<div itemscope itemtype="http://schema.org/Person" class="team__container">
+
+  <div class="team__avatar">
+    {% if author.avatar contains "://" %}
+    	<img src="{{ post.avatar }}" alt="{{ post.name }}">
+    {% else %}
+    	<img src="{{ post.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ post.name }}">
+    {% endif %}
+  </div>
+
+  <div class="team__content">
+    <h3 class="team__name">{{ post.name }}</h3>
+    {% if post.bio %}<p class="team__bio">{{ post.bio }}</p>{% endif %}
+  </div>
 </div>
