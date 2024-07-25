@@ -2,7 +2,7 @@
 permalink: /contact/
 layout: contact
 title: "Contact us"
-excerpt: "Contact the Flavin NeuroMechatronics Lab at Georgia Tech."
+excerpt: "Contact the Flavin Neuromachines Lab at Georgia Tech."
 author_profile: false
 header:
     image: GT_birdseye.jpg
