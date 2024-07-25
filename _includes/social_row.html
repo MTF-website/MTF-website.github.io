@@ -1,0 +1,22 @@
+
+{% include base_path %}
+{% if include.dark %}
+    {% capture twitter_path %}{{ "/images/twitter_lightbg.svg" }}{% endcapture %}
+    {% capture linkedin_path %}{{ "/images/linkedin_lightbg.png" }}{% endcapture %}
+{% else %}
+    {% capture twitter_path %}{{ "/images/twitter_darkbg.svg" }}{% endcapture %}
+    {% capture linkedin_path %}{{ "/images/linkedin_darkbg.png" }}{% endcapture %}
+{% endif %}
+
+      <div class="social-icons">
+        {% if site.twitter.username %}
+          <a href="https://x.com/{{ site.twitter.username }}">
+                  <img style="" src="{{ twitter_path | prepend: base_path }}">
+            </a>
+        {% endif %}
+        {% if site.twitter.username %}
+          <a href="https://linkedin.com/in/{{ site.author.linkedin }}">
+                  <img src="{{ linkedin_path | prepend: base_path }}">
+            </a>
+        {% endif %}
+    </div>

@@ -2,13 +2,10 @@
 
 {% if page.layout == "home" %}
     {% capture logo_path %}{{ "/images/logo_full_lightbg.png" }}{% endcapture %}
-    {% capture twitter_path %}{{ "/images/twitter_lightbg.svg" }}{% endcapture %}
-    {% capture linkedin_path %}{{ "/images/linkedin_lightbg.png" }}{% endcapture %}
 {% else %}
     {% capture logo_path %}{{ "/images/logo_full_darkbg.png" }}{% endcapture %}
-    {% capture twitter_path %}{{ "/images/twitter_darkbg.svg" }}{% endcapture %}
-    {% capture linkedin_path %}{{ "/images/linkedin_darkbg.png" }}{% endcapture %}
 {% endif %}
+
 
 <footer {% if page.layout == "home" %}style="background-color: rgb(253,251,253);"{% endif %} >
 <div>
@@ -17,18 +14,12 @@
     <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</div>
 </div>
 <div class="rhs">
-      <div class="social-icons">
-        {% if site.twitter.username %}
-          <a href="https://x.com/{{ site.twitter.username }}">
-                  <img style="" src="{{ twitter_path | prepend: base_path }}">
-            </a>
-        {% endif %}
-        {% if site.twitter.username %}
-          <a href="https://linkedin.com/in/{{ site.author.linkedin }}">
-                  <img src="{{ linkedin_path | prepend: base_path }}">
-            </a>
-        {% endif %}
-    </div>
+{% if page.layout == "home" %}
+    {% include social_row.html dark='' %}
+    {% else %}
+    {% include social_row.html %}
+    {% endif %}
+
     <a class="page__footer-sitemap"  href="/sitemap/">Sitemap</a>
 </div>
 </div> 

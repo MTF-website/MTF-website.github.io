@@ -13,7 +13,7 @@
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
-  z-index: 20;
+  z-index: 30;
 
   //&--home {
   //    position: fixed;
@@ -21,7 +21,7 @@
 
   &__inner-wrap {
     //@include container;
-    max-width: 1000px;
+    //max-width: 1000px;
     @include clearfix;
     padding: 0;
     height: 100px;
@@ -34,7 +34,7 @@
 
     //position: relative;
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      //max-width: $x-large;
     }
 
     nav {
@@ -69,4 +69,21 @@
     padding-right: 2em;
     font-weight: 700;
   }
+}
+
+.masthead .social-icons {
+    transform: translate(0,-50%);
+    top: 50%;
+    a {
+        margin: 0;
+    }
+    img {
+        height: 30px;
+    }
+}
+@include breakpoint(max-width $medium) {
+.masthead .social-icons {
+    visibility: hide;
+    display: none;
+}
 }

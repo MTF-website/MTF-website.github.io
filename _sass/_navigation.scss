@@ -175,6 +175,9 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
+  max-width: 1000px;
+  transform: translate(-50%,0);
+  left: 50%;
   //background: $background-color;
 
   a {
@@ -204,9 +207,9 @@
 
   .visible-links {
     display: table;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,0);
+    //position: relative;
+    //left: ;
+    //transform: translate(-50%,0);
 
     li {
       display: table-cell;
@@ -252,6 +255,13 @@
       }*/
     }
   }
+@include breakpoint(max-width $medium) {
+  .visible-links {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+}
 
   .hidden-links {
     position: absolute;
