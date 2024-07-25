@@ -241,11 +241,15 @@
     .wrapper {
         transform: translate(0,-50%);
         //top: calc(50% - 100vw * 0.192 );
-        top: calc(50% - 10vw + 50px);;
+        top: calc(50% - 10vw + 50px - 50vh + 50svh);
         position: relative;
 //      padding-left: 1em;
 //      padding-right: 1em;
 
+@include breakpoint(max-width $medium) {
+        top: calc(50% - 10vw + 30px - 50vh + 50svh);
+
+}
       @include breakpoint($x-large) {
         max-width: $x-large;
       }

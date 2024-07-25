@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Flavin NeuroMechatronics Lab"
+title                    : "Flavin NeuroMachines Lab"
 title_separator          : "-"
 name                     : &name "Matthew Flavin"
 description              : &description "Research lab at Georgia Tech. Neural mechatronics and mixed reality for patient care."
