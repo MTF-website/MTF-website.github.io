@@ -83,7 +83,7 @@
 }
 @include breakpoint(max-width $medium) {
 .masthead .social-icons {
-    visibility: hide;
+    visibility: hidden;
     display: none;
 }
 }

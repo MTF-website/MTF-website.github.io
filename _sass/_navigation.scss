@@ -484,7 +484,7 @@
 @include breakpoint(max-width $medium) {
     .masthead__menu-item {
         display: none !important;
-        visibility: hide !important;
+        visibility: hidden !important;
     }
     .masthead__inner-wrap {
         height: 60px;
@@ -494,16 +494,23 @@
     }
 }
 
-@include breakpoint($medium) {
+
     .menu-toggle {
         display: none;
-        visibility: hide;
-    }
+        visibility: hidden;
+@include breakpoint(max-width $medium) {
+    display: unset;
+    visibility: unset;
+}
+}
     .hidden-links2 {
         display: none;
-        visibility: hide;
-    }
+        visibility: hidden;
+@include breakpoint(max-width $medium) {
+    display: unset;
+    visibility: unset;
 }
+    }
 
 
 

@@ -533,6 +533,9 @@
 
     display: flex;
     flex-flow: column;
+    .page__content p {
+        text-align: center;
+    }
 }
 
 
