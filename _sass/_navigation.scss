@@ -499,16 +499,16 @@
         display: none;
         visibility: hidden;
 @include breakpoint(max-width $medium) {
-    display: unset;
-    visibility: unset;
+    display: revert;
+    visibility: revert;
 }
 }
     .hidden-links2 {
         display: none;
         visibility: hidden;
 @include breakpoint(max-width $medium) {
-    display: unset;
-    visibility: unset;
+    display: revert;
+    visibility: revert;
 }
     }
 
