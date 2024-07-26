@@ -1,8 +1,8 @@
 ---
 permalink: /
 layout: home
-title: "Neural Mechatronics and Extended Reality for Patient Care"
-excerpt: "Research lab at Georgia Tech. Neural mechatronics and extended reality for patient care."
+title: "Flavin Neuromachines Lab"
+excerpt: "A research lab at Georgia Tech studying neural mechatronics and extended reality for patient care"
 author_profile: false
 header:
     overlay_image: IMG_3799_smaller.jpg

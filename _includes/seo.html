@@ -87,11 +87,6 @@
   {% endif %}
 {% endif %}
 
-{% if page.header.image %}
-  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: "/images/" | prepend: base_path }}{% endif %}">
-{% elsif page.header.overlay_image %}
-  <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
-{% endif %}
 
 {% if page.date %}
   <meta property="og:type" content="article">
@@ -106,33 +101,54 @@
 {% endif %}
 
 
-{% if page.excerpt == "Matthew T. Flavin is a postdoctoral researcher developing bioelectronics and neuroengineering technologies" %}
-  <script type="application/ld+json">
-  {
-  "@context" : "http://schema.org",
-  "@type" : "WebSite",
-  "name" : "Matthew Flavin",
-  "alternateName" : ["Matt Flavin","Matthew T. Flavin", "Matthew T. Flavin, Ph.D.", "Neural Mechatronics"],
-  "url" : "https://flavinresearch.io"
-  }
-  </script>
+{% if page.title == "Flavin Neuromachines Lab" %}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "image": "{{ base_path }}/images/logo_words.png",
+      "url": "{{ base_path }}",
+      "logo": "{{ base_path }}/images/logo_words.png",
+      "name": "Flavin Neuromachines Lab",
+      "description": "The Flavin Neuromachines Lab is a research lab at Georgia Tech studying neural mechatronics and extended reality for patient care.",
+      "email": "{{ author.email }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "777 Atlantic Dr NW",
+        "addressLocality": "Atlanta",
+        "addressCountry": "USA",
+        "addressRegion": "Georgia",
+        "postalCode": "30313"
+      },
+
+"contactPoint": {
+  "@type": "ContactPoint",
+  "email": "{{ author.email }}"
+}
+    }
+    </script>
+
+{% endif %}
+
+{% if page.title == "Our group" %}
   <script type="application/ld+json">
     {
       "@context" : "https://schema.org",
       "@type" : "ProfilePage",     
-      "dateCreated" : "2024-02-03T23:18:49+0000",
+      "dateCreated" : "2024-07-25T00:00:00+0000",
       "dateModified" : "{{ site.time }}",
       "mainEntity": {
           "@type": "Person",
           "name" : "{{ site.social.name | default: site.name }}",
           "alternateName" : "Matt Flavin",
           "image" : "{{ author.avatar | prepend: "/images/" | prepend: base_path }}",
-          "description" : "{{ author.bio }}",
+          "description" : "Matthew Flavin leads the Flavin Neuromachines Lab as an assistant professor at Georgia Tech.",
           "sameAs" : [
               "{{ author.orcid }}",
               "{{ author.googlescholar }}",
               "https://www.linkedin.com/in/{{ author.linkedin }}",
-              "https://twitter.com/{{ author.twitter }}"
+              "https://x.com/{{ author.twitter }}",
+              "{{ author.profile }}",
           ]
       }
       

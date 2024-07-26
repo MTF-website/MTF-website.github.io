@@ -43,7 +43,7 @@
       {% endif %}
     </div>
   {% else %}
-    <img style="position: fixed;" src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
+    <img style="position: fixed; top: calc(min(25vh - 33vw,0px))" src="{{ img_path }}" alt="{{ page.title }}" class="page__hero-image">
     <!--<div class="hero-wrapper" >
         <h1 class="page__title" itemprop="headline">
           {{ page.title | default: site.title | upcase | markdownify | remove: "<p>" | remove: "</p>" }}

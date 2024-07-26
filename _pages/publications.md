@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+excerpt: "Flavin Neuromachines Lab publications"
 permalink: /publications/
 author_profile: false
 ---

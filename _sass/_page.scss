@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .hero_p1 {
-    height: 100vh;
+    height: max(100vh,calc(20vw + 100px + 150px));
     display: flex;
     flex-flow: column;
 }
@@ -531,10 +531,12 @@
 }
 
 .hero_p2 {
-    height: 100vh;
+    //height: 100vh;
 
+    height: max(100vh,calc(24vw + 100px + 400px));
     display: flex;
     flex-flow: column;
+
     .page__content p {
         text-align: center;
     }
