@@ -13,7 +13,7 @@ name                     : &name "Matthew Flavin"
 description              : &description "Research lab at Georgia Tech. Neural mechatronics and mixed reality for patient care."
 url                      : https://flavinlab.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Flavin-NeuroMechatronics-Lab/Flavin-NeuroMechatronics-Lab.github.io"
+repository               : "MTF-website/MTF-website.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
   #words_per_minute         : 160
