@@ -110,13 +110,13 @@
       "url": "{{ base_path }}",
       "logo": "{{ base_path }}/images/logo_words.png",
       "name": "Flavin Neuromachines Lab",
-      "description": "The Flavin Neuromachines Lab is a research lab at Georgia Tech studying neural mechatronics and extended reality for patient care.",
+      "description": "The Flavin Neuromachines Lab is a research lab at Georgia Tech studying neural mechatronics and extended reality for patient care",
       "email": "{{ author.email }}",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "777 Atlantic Dr NW",
         "addressLocality": "Atlanta",
-        "addressCountry": "USA",
+        "addressCountry": "us",
         "addressRegion": "Georgia",
         "postalCode": "30313"
       },
@@ -142,13 +142,13 @@
           "name" : "{{ site.social.name | default: site.name }}",
           "alternateName" : "Matt Flavin",
           "image" : "{{ author.avatar | prepend: "/images/" | prepend: base_path }}",
-          "description" : "Matthew Flavin leads the Flavin Neuromachines Lab as an assistant professor at Georgia Tech.",
+          "description" : "Matthew Flavin leads the Flavin Neuromachines Lab as an assistant professor at Georgia Tech",
           "sameAs" : [
               "{{ author.orcid }}",
               "{{ author.googlescholar }}",
               "https://www.linkedin.com/in/{{ author.linkedin }}",
               "https://x.com/{{ author.twitter }}",
-              "{{ author.profile }}",
+              "{{ author.profile }}"
           ]
       }
       
