@@ -189,6 +189,9 @@ collections:
   grad_students:
     output: false
     permalink: ""
+  undergrad_students:
+    output: false
+    permalink: ""
   research:
     output: false
     permalink: ""
