@@ -6,5 +6,5 @@ date: 2024-11-06
 venue: 'Nature'
 paperurl: '/files/bioelastic_state_recovery.pdf'
 link: 'https://doi.org/10.1038/s41586-024-08155-9'
-citation: 'Matthew T. Flavin,* Kyoung-Ho Ha,* Zengrong Guo,* Shupeng Li,* Jin Tae Kim,* Tara Saxena, Fatimah Al-Najjar, Shishir Bandapalli, Chengye Fan, Dongjun Bai, Zhuang Zhang, Jae Young Yoo, Minsu Park, Jaeho Shin, Aaron Huang, Hee Sup Shin, Yonggang Huang, Zhaoqian Xie, Hanqing Jiang, John A. Rogers, &quot;Bioelastic state recovery for haptic sensory substitution,&quot; in <i>Nature</i>, Nov. 2024.'
+citation: 'Matthew T. Flavin,* Kyoung-Ho Ha,* Zengrong Guo,* Shupeng Li,* Jin Tae Kim,* Tara Saxena, Fatimah Al-Najjar, Shishir Bandapalli, Chengye Fan, Dongjun Bai, Zhuang Zhang, Jae Young Yoo, Minsu Park, Jaeho Shin, Aaron Huang, Hee Sup Shin, Yonggang Huang, Zhaoqian Xie, Hanqing Jiang, John A. Rogers, &quot;Bioelastic state recovery for haptic sensory substitution,&quot; in <i>Nature</i>, vol. 635, pp. 345–352, Nov. 2024.'
 ---
