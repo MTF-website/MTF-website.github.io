@@ -19,11 +19,7 @@ layout: default
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | upcase | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
         </header>
       {% endunless %}
-    <div class="group__container__container">
-          {% for post in site.group_photos %}
-            {% include group_card.html %}
-          {% endfor %}
-      </div>
+    
     <h2>Principal investigator</h2>
         {% include pi_card.html %}
     <h2>Graduate students</h2>
@@ -38,4 +34,10 @@ layout: default
       {% include people_card.html %}
     {% endfor %}
   </div>
+  <h2>Group photos</h2>
+  <div class="group__container__container">
+          {% for post in site.group_photos %}
+            {% include group_card.html %}
+          {% endfor %}
+      </div>
 </div>
