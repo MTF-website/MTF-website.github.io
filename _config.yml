@@ -192,6 +192,9 @@ collections:
   undergrad_students:
     output: false
     permalink: ""
+  group_photos:
+    output: false
+    permalink: ""
   research:
     output: false
     permalink: ""
