@@ -110,6 +110,20 @@
     margin-top: 20px;
         column-gap: 50px;
 }
+.group__container__container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+        column-gap: 50px;
+}
+
+.group__container {
+    flex: 0 1 210px;
+}
 
 .team__container {
     flex: 0 1 210px;
