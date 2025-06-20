@@ -1,10 +1,14 @@
 {% include base_path %}
 
-
 <div class="group__container">
+<div class="group__avatar">
     {% if author.avatar contains "://" %}
     	<img src="{{ post.avatar }}" alt="{{ post.name }}">
     {% else %}
     	<img src="{{ post.avatar | prepend: "/images/" | prepend: base_path }}" class="group__avatar" alt="{{ post.name }}">
     {% endif %}
+</div>
+<div class="group__content">
+    <h3 class="group__name">{{ post.name }}</h3>
+  </div>
 </div>
