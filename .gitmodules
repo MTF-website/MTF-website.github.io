@@ -1,0 +1,3 @@
+[submodule "JS-Bioelastic_state_recovery"]
+	path = JS-Bioelastic_state_recovery
+	url = https://github.com/MuzaPro/JS-Bioelastic_state_recovery.git

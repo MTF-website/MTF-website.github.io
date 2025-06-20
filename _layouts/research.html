@@ -1,31 +1,61 @@
----
-layout: research
----
+<div class="research_ns">
+<main class="main-content">
+        <div class="container">
+            <section class="demo-section">
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <h1 class="main-title">Breakthrough Haptic Technology</h1>
+                        <div class="section-divider"></div>
+                        <p class="description">
+                            This breakthrough transducer integrates human skin as a central mechanical component, creating the first energy-recovering haptic actuator. By leveraging skin's natural elasticity, the device achieves bistable operation with 285% greater energy efficiency than conventional approaches. The electromagnetic mechanism delivers forces up to 1.4 N with displacements exceeding 2 mm, targeting specific mechanoreceptor classes for precise tactile sensations. This bio-integrated approach fundamentally reimagines the interface between technology and human sensory perception.
+                        </p>
+                        <div class="context-image-container"></div>
+                    </div>
+                    <div class="visual-content">
+                        <div class="media-container">
+                            <img src="assets/animations/state-static/state1_static.webp" 
+                                 alt="Haptic transducer on hand" 
+                                 class="state-visual"
+                                 id="stateVisual">
+                            <video class="state-animation" 
+                                   id="stateAnimation"
+                                   preload="auto">
+                                <source src="" type="video/webm">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- State Navigation (moved from top) -->
+                <nav class="state-nav">
+                  <button class="state-link" data-state="1">
+                    <i class="fa-solid fa-hand"></i><span>Intro</span>
+                  </button>
+                  <button class="state-link" data-state="2">
+                    <i class="fa-solid fa-wrench"></i><span>Design</span>
+                  </button>
+                  <button class="state-link" data-state="3">
+                    <i class="fa-solid fa-arrows-up-down"></i><span>Mechanism</span>
+                  </button>
+                  <button class="state-link" data-state="4">
+                    <img src="assets/icons/nav-icons/array.svg" alt="Array icon" class="nav-icon">
+                    <span>Layout</span>
+                  </button>
+                  <button class="state-link" data-state="5">
+                    <i class="fa-brands fa-uncharted btn-icon"></i><span>Utilization</span>
+                  </button>
+                </nav>
 
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
-{% endif %}
+                <hr class="thin-divider">
 
-<div class="bio-container">
-	<div class="bio-item1">
-    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
-    </div>
-  <div class="bio-item2">
-		<p><b>Distributed haptic systems</b></p>
-		<p>Material confined likewise it humanity raillery an unpacked as he. Three chief merit no if. Now how her edward engage not horses. Oh resolution he dissimilar precaution to comparison an. Matters engaged between he of pursuit manners we moments. Merit gay end sight front. Manor equal it on again ye folly by match. In so melancholy as an sentiments simplicity connection. Far supply depart branch agreed old get our.</p>
-	</div>
-	<div class="bio-item1">
-    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
-    </div>
-  <div class="bio-item2">
-		<p><b>Distributed haptic systems</b></p>
-		<p>Material confined likewise it humanity raillery an unpacked as he. Three chief merit no if. Now how her edward engage not horses. Oh resolution he dissimilar precaution to comparison an. Matters engaged between he of pursuit manners we moments. Merit gay end sight front. Manor equal it on again ye folly by match. In so melancholy as an sentiments simplicity connection. Far supply depart branch agreed old get our.</p>
-	</div>
-  <div class="bio-item1">
-    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
-    </div>
-  <div class="bio-item2">
-		<p><b>Distributed haptic systems</b></p>
-		<p>Material confined likewise it humanity raillery an unpacked as he. Three chief merit no if. Now how her edward engage not horses. Oh resolution he dissimilar precaution to comparison an. Matters engaged between he of pursuit manners we moments. Merit gay end sight front. Manor equal it on again ye folly by match. In so melancholy as an sentiments simplicity connection. Far supply depart branch agreed old get our.</p>
-	</div>
+                <p class="paper-cite">
+                  Based on: <em>"Bioelastic State Recovery for Haptic Sensory Substitution."</em>
+                  <span>Nature, Nov 2024.</span>
+                  <a href="https://doi.org/10.1038/s41586-024-08155-9" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </p>
+            </section>
+        </div>
+    </main>
 </div>

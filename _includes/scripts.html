@@ -1,4 +1,6 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
-
+{% if page.layout == "research" %}
+<script src="{{ base_path }}/JS-Bioelastic_state_recovery/script.js"></script>
+{% endif %}
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
