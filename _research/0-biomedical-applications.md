@@ -1,7 +1,7 @@
 ---
 title: "Therapeutic Biomedical Systems For Patient Care"
 collection: research
-image: "Asset 9.png"
+image: "the_body.png"
 citations:
     -   title: "Bioelectronics for targeted pain management"
         journal: "Nature Reviews Electrical Engineering"

@@ -1,7 +1,7 @@
 ---
 title: "Wearable Bioelectronic Interfaces"
 collection: research
-image: "Asset 7.png"
+image: "foundations.jpg"
 citations:
     -   title: "Soft network composite materials with deterministic and bio-inspired designs"
         journal: "Nature Communications"

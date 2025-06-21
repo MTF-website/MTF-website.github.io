@@ -1,7 +1,7 @@
 ---
 title: "Mixed Reality for Enhanced Teaching and Learning"
 collection: research
-image: "Asset 7.png"
+image: "learning.jpg"
 citations:
     -   title: "Augmented reality for mathematics achievement: A meta-analysis of main and moderator effects"
         journal: "International Journal of Science and Mathematics Education"

@@ -1,7 +1,7 @@
 ---
 title: "Selective Peripheral Neuro-modulation with Iontronic Materials"
 collection: research
-image: "Asset 9.png"
+image: "neuro.png"
 citations:
     -   title: "Electrochemical modulation enhances the selectivity of peripheral neurostimulation in vivo"
         journal: "PNAS"
