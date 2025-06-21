@@ -18,12 +18,28 @@ layout: default
             <section class="demo-section">
                 <div class="content-wrapper">
                     <div class="text-content">
-                        <h1 class="main-title">Breakthrough Haptic Technology</h1>
+                        <h1 class="main-title">Multisensory Haptic Engagement</h1>
                         <div class="section-divider"></div>
                         <p class="description">
-                            This breakthrough transducer integrates human skin as a central mechanical component, creating the first energy-recovering haptic actuator. By leveraging skin's natural elasticity, the device achieves bistable operation with 285% greater energy efficiency than conventional approaches. The electromagnetic mechanism delivers forces up to 1.4 N with displacements exceeding 2 mm, targeting specific mechanoreceptor classes for precise tactile sensations. This bio-integrated approach fundamentally reimagines the interface between technology and human sensory perception.
+                         Just as our eyes can combine red, green, and blue hues to produce color vision, our skin can perceive physical contact through the coordination of multiple discrete receptors. We have demonstrated a small-scale transducer capable of selectively engaging independent classes of mechanoreceptors. Untethered arrays of these transducers connect wirelessly to LiDAR as the basis for a visual sensory substitution system.
                         </p>
-                        <div class="context-image-container"></div>
+                        <div class="context-image-container">
+                            <img class="context-image" src="https://flavinlab.io/assets/images/Device_on_neck.jpeg">
+                        </div>
+                <hr class="thin-divider">
+                <div class="paper-cite">
+                  <a href="https://doi.org/10.1038/s41586-024-08155-9" target="_blank" rel="noopener">
+                Bioelastic state recovery for haptic sensory substitution, <i>Nature</i>, 2024.
+                  </a>
+                  <a href="https://doi.org/10.1126/science.adt2481" target="_blank" rel="noopener">
+                Full freedom-of-motion actuators as advanced haptic interfaces, <i>Science</i>, 2025.
+                  </a>
+                  <a href="https://doi.org/10.1073/pnas.2217828120" target="_blank" rel="noopener">
+                 Skin-integrated systems for power efficient, programmable thermal sensations across large body areas, <i>PNAS</i>, 2023.
+                  </a>
+                    <p>*Visualization shared by Gabriele Meilikhov (Muza Productions)</p>  
+                  
+                </div>
                     </div>
                     <div class="visual-content">
                         <div class="media-container">
@@ -37,8 +53,6 @@ layout: default
                                 <source src="" type="video/webm">
                             </video>
                         </div>
-                    </div>
-                </div>
                 
                 <!-- State Navigation (moved from top) -->
                 <nav class="state-nav">
@@ -60,16 +74,14 @@ layout: default
                   </button>
                 </nav>
 
-                <hr class="thin-divider">
+                    </div>
+                </div>
 
-                <p class="paper-cite">
-                  Based on: <em>"Bioelastic State Recovery for Haptic Sensory Substitution."</em>
-                  <span>Nature, Nov 2024.</span>
-                  <a href="https://doi.org/10.1038/s41586-024-08155-9" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </a>
-                </p>
             </section>
+    {% for post in site.research %}
+      {% include research_item.html %}
+    {% endfor %}
         </div>
+
     </main>
 </div>

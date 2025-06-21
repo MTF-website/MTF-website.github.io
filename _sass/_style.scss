@@ -112,11 +112,12 @@ body {
     padding: 60px 0;
 }
 
-.demo-section {
+.demo-section, .demo-section-low {
     width: 100%;
+    padding-bottom: 80px;
 }
 
-.content-wrapper {
+.content-wrapper, .content-wrapper-low {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -125,12 +126,12 @@ body {
 }
 
 /* Text Content */
-.text-content {
+.text-content, .text-content-low {
     max-width: 600px;
     align-self: center; /* Center text content vertically */
 }
 
-.main-title {
+.main-title, .main-title-low {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 48px;
@@ -139,14 +140,14 @@ body {
     line-height: 1.2;
 }
 
-.section-divider {
+.section-divider, .section-divider-low {
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
     width: 100%;
 }
 
-.description {
+.description, .description-low {
     font-size: 16px;
     line-height: 1.8;
     color: #333;
@@ -184,7 +185,7 @@ body {
 }
 
 /* Visual Content */
-.visual-content {
+.visual-content, .visual-content-low {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,9 +194,10 @@ body {
     align-self: center;
     cursor: pointer;
     z-index: 900; /* Add z-index that's lower than nav bar */
+    flex-direction: column;
 }
 
-.media-container {
+.media-container, .media-container-low {
     position: relative;
     width: 45vh;
     height: 45vh;
@@ -205,7 +207,7 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.state-visual,
+.state-visual, .state-visual-low,
 .state-animation {
     position: absolute;
     top: 0;
@@ -216,7 +218,7 @@ body {
     border-radius: 16px;
 }
 
-.state-visual {
+.state-visual, .state-visual-low {
     z-index: 1;
     opacity: 1;
 }
@@ -232,7 +234,7 @@ body {
 }
 
 /* Optional: Add a subtle indicator on hover */
-.visual-content::after {
+.visual-content::after, .visual-content-low::after{
     content: "";
     position: absolute;
     top: 10px;
@@ -245,14 +247,14 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.visual-content:hover::after {
+.visual-content:hover::after, .visual-content-low:hover::after {
     opacity: 1;
 }
 
 /* Prevent selection on visual content for mobile */
-.visual-content,
-.media-container,
-.state-visual,
+.visual-content, .visual-content-low,
+.media-container, .media-container-low,
+.state-visual, .state-visual-low,
 .state-animation {
     -webkit-user-select: none;  /* Safari */
     -ms-user-select: none;      /* IE/Edge */
@@ -262,7 +264,7 @@ body {
 }
 
 /* Ensure clickable cursor is still shown */
-.visual-content {
+.visual-content-low {
     cursor: pointer;
 }
 
@@ -280,11 +282,11 @@ body {
 }
 
 /* Content Transitions */
-.text-content {
+.text-content, .text-content-low {
     transition: opacity 0.3s ease;
 }
 
-.text-content.fade-out {
+.text-content.fade-out, .text-content.fade-out-low {
     opacity: 0;
 }
 
@@ -356,7 +358,7 @@ body {
 }
 
 /* Thin divider */
-.thin-divider {
+.thin-divider, .thin-divider-low {
     border: 0;
     height: 1px;
     margin: 12px 0 6px;
@@ -364,22 +366,35 @@ body {
 }
 
 /* Citation footer */
-.paper-cite {
-    font: 400 12px/1.4 "Roboto", sans-serif;
-    color: #555;
-    display: flex;
-    gap: 6px;
-    align-items: center;
-}
+.paper-cite, .paper-cite-low {
 
-.paper-cite i {
-    font-size: 12px;
-    opacity: .75;
-    transition: opacity .2s;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: start;
+  a, p {
+      font: 400 12px/1.4 "Roboto", sans-serif;
+      color: #555;
+      //display: flex;
+      //gap: 6px;
+      //align-items: center;
+      text-decoration: none;
+  }
 
-.paper-cite a:hover i {
-    opacity: 1;
+  p {
+    color: black;
+  }
+
+  i {
+   //   font-size: 12px;
+   //   opacity: .75;
+   //   transition: opacity .2s;
+   color: black;
+  }
+
+  //a:hover i {
+  //    opacity: 1;
+  //}
 }
 
 /* Switch Button for State 3 */
@@ -451,20 +466,20 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .media-container {
+    .media-container, .media-container-low {
         width: 50vw;
         height: 50vw;
     }
 }
 
 @media (max-width: 768px) {
-    .content-wrapper {
+    .content-wrapper, .content-wrapper-low {
         grid-template-columns: 1fr;
         gap: 40px;
         min-height: auto;
     }
     
-    .main-title {
+    .main-title, .main-title-low {
         font-size: 36px;
     }
     
@@ -483,24 +498,24 @@ body {
         display: none;
     }
     
-    .media-container {
+    .media-container, .media-container-low {
         width: 75vw;
         height: 75vw;
         max-width: 400px;
         max-height: 400px;
     }
     
-    .visual-content {
+    .visual-content, .visual-content-low {
         position: relative;
         top: auto;
         margin-bottom: 30px;
     }
     
-    .text-content {
+    .text-content, .text-content-low {
         order: 2;
     }
     
-    .visual-content {
+    .visual-content, .visual-content-low {
         order: 1;
     }
     

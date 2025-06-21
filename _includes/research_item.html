@@ -1,13 +1,29 @@
 {% include base_path %}
 
-<h2>{{ post.title }}</h2>
-<div class="bio-container">
-	<div class="bio-item1">
-    <img src="{{ post.image | prepend: "/images/" | prepend: base_path }}"  alt="Distributed haptics">
+<section class="demo-section-low">
+    <div class="content-wrapper-low">
+        <div class="text-content-low">
+            <h1 class="main-title-low">{{post.title}}</h1>
+            <div class="section-divider-low"></div>
+            <p class="description-low">
+            {{post.content}}
+            </p>
+    <hr class="thin-divider-low">
+    <div class="paper-cite-low">
+        {% for citation in post.citations %}
+        <a href="{{citation.link}}" target="_blank" rel="noopener">
+            {{citation.title}}, <i>{{citation.journal}}</i>, {{citation.year}}.
+      </a>
+      {% endfor %} 
     </div>
-  <div class="bio-item2">
-		
-      {{ post.content }}
-	</div>
+        </div>
+        <div class="visual-content-low">
+                        <div class="media-container-low">
+                            <img class="state-visual-low" src="{{ post.image | prepend: "/images/" | prepend: base_path }}"  alt="{{post.title}}">
+    
 
-</div>
+        </div>
+        </div>
+    </div>
+
+</section>

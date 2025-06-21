@@ -2,37 +2,38 @@
 // State management
 const states = {
     1: {
-        title: "Breakthrough Haptic Technology",
-        description: "This breakthrough transducer integrates human skin as a central mechanical component, creating the first energy-recovering haptic actuator. By leveraging skin's natural elasticity, the device achieves bistable operation with 285% greater energy efficiency than conventional approaches. The electromagnetic mechanism delivers forces up to 1.4 N with displacements exceeding 2 mm, targeting specific mechanoreceptor classes for precise tactile sensations. This bio-integrated approach fundamentally reimagines the interface between technology and human sensory perception.",
-        image: "https://flavinlab.io/assets/animations/state-static/state1_static.webp"
+        title: "Multisensory Haptic Engagement",
+        description: "Just as our eyes can combine red, green, and blue hues to produce color vision, our skin can perceive physical contact through the coordination of multiple discrete receptors. We have demonstrated a small-scale transducer capable of selectively engaging independent classes of mechanoreceptors. Untethered arrays of these transducers connect wirelessly to LiDAR as the basis for a visual sensory substitution system.",
+        image: "https://flavinlab.io/assets/animations/state-static/state1_static.webp",
+        contextImage: "https://flavinlab.io/assets/images/Device_on_neck.jpeg" // Added context image
     },
     2: {
-        title: "Precision Engineering",
-        description: "The transducer's sophisticated design features rare-earth neodymium magnets, soft ferromagnetic cores, and precision-machined titanium components. This electromagnetic architecture enables bistable operation through careful mechanical integration with human skin. The device switches between compressed and relaxed states using minimal current pulses, storing and recovering elastic energy from skin deformation. Each component is optimized for maximum efficiency while maintaining biocompatibility and long-term reliability.",
+        title: "Leveraging the Skin as a Mechanical Element",
+        description: "Most people are familiar with vibration actuators, which can be found in video game controllers and smartphones. Along with vibration, our approach can deliver skin indentation and twisting. By analogy, this is like going from black-and-white to color TV.",
         image: "https://flavinlab.io/assets/animations/state-static/state2_static.webp"
     },
     3: {
-        title: "Force Distribution",
-        description: "The transducer generates precisely controlled forces that interact with multiple layers of skin tissue. This mechanical stimulation activates specific mechanoreceptors at different depths, creating distinct tactile sensations. The bistable design allows the device to maintain either state with zero power consumption, requiring energy only during state transitions. This fundamental reimagining of haptic actuation results in unprecedented energy efficiency while delivering high-fidelity tactile feedback.",
+        title: "Large Forces and Multiple Sensations",
+        description: "Current haptic technologies capable of delivering sensations of pressing and twisting are bulky or tethered to large external power supplies. We solve this problem with a bistable mechanism that recovers energy stored in skin, rather than fighting against it. Along with the skin's natural bioelasticity, bistable operation is enabled through the use of materials with special magnetic and mechanical properties.",
         image: "https://flavinlab.io/assets/animations/state-static/state3-static.webp",
         hasSubstate: true,
         currentSubstate: "A"
     },
     "3B": {
-        title: "Force Distribution", // Same title as state 3
-        description: "The transducer generates precisely controlled forces that interact with multiple layers of skin tissue. This mechanical stimulation activates specific mechanoreceptors at different depths, creating distinct tactile sensations. The bistable design allows the device to maintain either state with zero power consumption, requiring energy only during state transitions. This fundamental reimagining of haptic actuation results in unprecedented energy efficiency while delivering high-fidelity tactile feedback.", // Same description as state 3
+        title: "Large Forces and Multiple Sensations",
+        description: "Current haptic technologies capable of delivering sensations of pressing and twisting are bulky or tethered to large external power supplies. We solve this problem with a bistable mechanism that recovers energy stored in skin, rather than fighting against it. Along with the skin's natural bioelasticity, bistable operation is enabled through the use of materials with special magnetic and mechanical properties.",
         image: "https://flavinlab.io/assets/animations/state-static/state3b-static.webp",
         hasSubstate: true,
         currentSubstate: "B"
     },
     4: {
-        title: "Scalable Haptic Arrays",
-        description: "Multiple transducers integrate into flexible arrays capable of rendering complex spatial patterns across the skin. The wireless control system coordinates up to 19 individual units, each operating independently to create rich tactile experiences. A compact battery powers the entire array for over 3 hours of continuous operation. This scalable architecture enables applications ranging from sensory substitution for the visually impaired to immersive virtual reality interfaces.",
+        title: "Spatially Resolved Patterns of Multimodal Stimuli",
+        description: "Multiple transducers integrate into flexible arrays capable of rendering complex spatial patterns across the skin. An embedded processor controls all communications on the array, and it controls all wireless communications with external sensors. A compact, internal battery powers the entire array for hours of continuous operation. This scalable architecture enables applications ranging from sensory substitution for the visually impaired to immersive virtual reality interfaces.",
         image: "https://flavinlab.io/assets/animations/state-static/state4_static.webp",
         contextImage: "https://flavinlab.io/assets/images/Device_on_neck.jpeg" // Added context image
     },
     5: {
-        title: "Sensory Feedback",
+        title: "Sensory Substitution and Augmentation",
         description: "User studies demonstrate the transducer's ability to create distinguishable tactile sensations with high spatial and temporal resolution. Participants successfully identified complex patterns rendered by the haptic array with over 95% accuracy after minimal training. The device's energy-efficient operation allows for extended use without discomfort or skin irritation. This technology opens new possibilities for human-machine interfaces, sensory augmentation, and medical applications requiring precise tactile feedback.",
         image: "https://flavinlab.io/assets/images/use-case-1.webp"
         // contextImage: "path/to/another/image.jpg" // Uncomment and set path if context image needed

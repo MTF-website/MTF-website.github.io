@@ -621,3 +621,25 @@
             margin-top: 0;
         }
 }
+.video-container {
+  margin-bottom: 40px;
+  .video-item {
+    width: min(700px,100%);
+    aspect-ratio: 560 / 315;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    border-bottom: none;
+  }
+  p {
+    text-align: left;
+    font-size: 18px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

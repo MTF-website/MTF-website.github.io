@@ -198,6 +198,9 @@ collections:
   research:
     output: false
     permalink: ""
+  videos:
+    output: false
+    permalink: ""
 
 # Defaults
 defaults:
