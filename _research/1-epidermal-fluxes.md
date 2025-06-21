@@ -1,7 +1,7 @@
 ---
 title: "The Skin Breathes: Monitoring Transepidermal Gases"
 collection: research
-image: "Asset 6.png"
+image: "fluxes.jpg"
 citations:
     -   title: "A non-contact wearable device for monitoring epidermal molecular flux"
         journal: "Nature"
