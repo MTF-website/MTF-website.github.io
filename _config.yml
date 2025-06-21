@@ -220,10 +220,7 @@ defaults:
 
 # Sass/SCSS
 sass:
-  load_paths: 
-    - _sass
-    - JS-Bioelastic_state_recovery
-
+  sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
