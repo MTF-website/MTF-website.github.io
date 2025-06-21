@@ -4,53 +4,53 @@ const states = {
     1: {
         title: "Breakthrough Haptic Technology",
         description: "This breakthrough transducer integrates human skin as a central mechanical component, creating the first energy-recovering haptic actuator. By leveraging skin's natural elasticity, the device achieves bistable operation with 285% greater energy efficiency than conventional approaches. The electromagnetic mechanism delivers forces up to 1.4 N with displacements exceeding 2 mm, targeting specific mechanoreceptor classes for precise tactile sensations. This bio-integrated approach fundamentally reimagines the interface between technology and human sensory perception.",
-        image: "assets/animations/state-static/state1_static.webp"
+        image: "https://flavinlab.io/assets/animations/state-static/state1_static.webp"
     },
     2: {
         title: "Precision Engineering",
         description: "The transducer's sophisticated design features rare-earth neodymium magnets, soft ferromagnetic cores, and precision-machined titanium components. This electromagnetic architecture enables bistable operation through careful mechanical integration with human skin. The device switches between compressed and relaxed states using minimal current pulses, storing and recovering elastic energy from skin deformation. Each component is optimized for maximum efficiency while maintaining biocompatibility and long-term reliability.",
-        image: "assets/animations/state-static/state2_static.webp"
+        image: "https://flavinlab.io/assets/animations/state-static/state2_static.webp"
     },
     3: {
         title: "Force Distribution",
         description: "The transducer generates precisely controlled forces that interact with multiple layers of skin tissue. This mechanical stimulation activates specific mechanoreceptors at different depths, creating distinct tactile sensations. The bistable design allows the device to maintain either state with zero power consumption, requiring energy only during state transitions. This fundamental reimagining of haptic actuation results in unprecedented energy efficiency while delivering high-fidelity tactile feedback.",
-        image: "assets/animations/state-static/state3-static.webp",
+        image: "https://flavinlab.io/assets/animations/state-static/state3-static.webp",
         hasSubstate: true,
         currentSubstate: "A"
     },
     "3B": {
         title: "Force Distribution", // Same title as state 3
         description: "The transducer generates precisely controlled forces that interact with multiple layers of skin tissue. This mechanical stimulation activates specific mechanoreceptors at different depths, creating distinct tactile sensations. The bistable design allows the device to maintain either state with zero power consumption, requiring energy only during state transitions. This fundamental reimagining of haptic actuation results in unprecedented energy efficiency while delivering high-fidelity tactile feedback.", // Same description as state 3
-        image: "assets/animations/state-static/state3b-static.webp",
+        image: "https://flavinlab.io/assets/animations/state-static/state3b-static.webp",
         hasSubstate: true,
         currentSubstate: "B"
     },
     4: {
         title: "Scalable Haptic Arrays",
         description: "Multiple transducers integrate into flexible arrays capable of rendering complex spatial patterns across the skin. The wireless control system coordinates up to 19 individual units, each operating independently to create rich tactile experiences. A compact battery powers the entire array for over 3 hours of continuous operation. This scalable architecture enables applications ranging from sensory substitution for the visually impaired to immersive virtual reality interfaces.",
-        image: "assets/animations/state-static/state4_static.webp",
-        contextImage: "assets/images/Device_on_neck.jpeg" // Added context image
+        image: "https://flavinlab.io/assets/animations/state-static/state4_static.webp",
+        contextImage: "https://flavinlab.io/assets/images/Device_on_neck.jpeg" // Added context image
     },
     5: {
         title: "Sensory Feedback",
         description: "User studies demonstrate the transducer's ability to create distinguishable tactile sensations with high spatial and temporal resolution. Participants successfully identified complex patterns rendered by the haptic array with over 95% accuracy after minimal training. The device's energy-efficient operation allows for extended use without discomfort or skin irritation. This technology opens new possibilities for human-machine interfaces, sensory augmentation, and medical applications requiring precise tactile feedback.",
-        image: "assets/images/use-case-1.webp"
+        image: "https://flavinlab.io/assets/images/use-case-1.webp"
         // contextImage: "path/to/another/image.jpg" // Uncomment and set path if context image needed
     }
 };
 
 // Update animations object to include the new substate transitions
 const animations = {
-    "1-2": "assets/animations/state1-to-state2.webm",
-    "2-1": "assets/animations/state2-to-state1.webm",
-    "1-4": "assets/animations/state1-to-state4.webm",
-    "4-1": "assets/animations/state4-to-state1.webm",
-    "2-3": "assets/animations/state2-to-state3.webm",
-    "3-2": "assets/animations/state3-to-state2.webm",
-    "2-4": "assets/animations/state2-to-state4.webm",
-    "4-2": "assets/animations/state4-to-state2.webm",
-    "3-3B": "assets/animations/3Ato3B.webm",
-    "3B-3": "assets/animations/3Bto3A.webm"
+    "1-2": "https://flavinlab.io/assets/animations/state1-to-state2.webm",
+    "2-1": "https://flavinlab.io/assets/animations/state2-to-state1.webm",
+    "1-4": "https://flavinlab.io/assets/animations/state1-to-state4.webm",
+    "4-1": "https://flavinlab.io/assets/animations/state4-to-state1.webm",
+    "2-3": "https://flavinlab.io/assets/animations/state2-to-state3.webm",
+    "3-2": "https://flavinlab.io/assets/animations/state3-to-state2.webm",
+    "2-4": "https://flavinlab.io/assets/animations/state2-to-state4.webm",
+    "4-2": "https://flavinlab.io/assets/animations/state4-to-state2.webm",
+    "3-3B": "https://flavinlab.io/assets/animations/3Ato3B.webm",
+    "3B-3": "https://flavinlab.io/assets/animations/3Bto3A.webm"
     // Removed non-existent animation files
 };
 
