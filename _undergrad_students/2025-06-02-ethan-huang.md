@@ -2,6 +2,6 @@
 name: "Ethan Huang"
 collection: undergrad_students
 date: 2025-06-02
-avatar: "Empty_avatar.jpg"
+avatar: "Ethan_avatar.jpg"
 bio: "B.S. student, School of Electrical and Computer Engineering"
 ---
