@@ -1,0 +1,10 @@
+{% include base_path %}
+
+
+<div itemscope itemtype="http://schema.org/Person" class="team__container">
+
+  <div class="team__content">
+    <h3 class="team__name">{{ post.name }}</h3>
+    {% if post.bio %}<p class="team__bio">{{ post.bio }}</p>{% endif %}
+  </div>
+</div>

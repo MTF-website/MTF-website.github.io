@@ -186,7 +186,13 @@ collections:
   preparation:
     output: false
     permalink: ""
+  alumni:
+    output: false
+    permalink: ""
   grad_students:
+    output: false
+    permalink: ""
+  postdocs:
     output: false
     permalink: ""
   undergrad_students:

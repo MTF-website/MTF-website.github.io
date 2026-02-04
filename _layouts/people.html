@@ -22,7 +22,13 @@ layout: default
     
     <h2>Principal investigator</h2>
         {% include pi_card.html %}
-    <h2>Graduate students</h2>
+    <h2>Postdoctoral researchers</h2>
+    <div class="team__container__container">
+    {% for post in site.postdocs %}
+      {% include people_card.html %}
+    {% endfor %}
+    </div>
+        <h2>Graduate students</h2>
     <div class="team__container__container">
     {% for post in site.grad_students %}
       {% include people_card.html %}
@@ -32,6 +38,12 @@ layout: default
     <div class="team__container__container">
     {% for post in site.undergrad_students %}
       {% include people_card.html %}
+    {% endfor %}
+  </div>
+      <h2>Alumni</h2>
+    <div class="team__container__container">
+    {% for post in site.alumni %}
+      {% include people_card_alumni.html %}
     {% endfor %}
   </div>
   <h2>Group photos</h2>
